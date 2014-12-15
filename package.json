@@ -1,7 +1,7 @@
 {
-  "name": "http-server",
+  "name": "watch-http-server",
   "version": "0.7.4",
-  "description": "a simple zero-configuration command-line http server",
+  "description": "a simple command-line http server with the built-in zero-configuration automatic page reloads.",
   "main": "./lib/http-server",
   "repository": {
     "type": "git",
@@ -9,7 +9,9 @@
   },
   "keywords": [
     "cli",
-    "command"
+    "command",
+    "websocket",
+    "watch"
   ],
   "scripts": {
     "start": "node ./bin/http-server",
@@ -57,13 +59,14 @@
       "email": "master@bdyne.net"
     },
     {
-      "name": "Graham Stachowiak"
+      "name": "gstack (graham s)",
+      "email": "gray@ruleless.org"
     }
   ],
   "dependencies": {
     "chokidar": "^0.12.4",
     "colors": "1.0.3",
-    "sexstatic": "*",
+    "sexstatic": "~0.6.x",
     "opener": "~1.4.0",
     "optimist": "0.6.x",
     "portfinder": "0.2.x",
@@ -88,6 +91,7 @@
   "preferGlobal": "true",
   "bin": {
     "watch-http-server": "./bin/http-server",
+    "watchhttpserver": "./bin/http-server",
     "whs": "./bin/http-server"
   }
 }
