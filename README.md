@@ -23,6 +23,7 @@ This will install `watch-http-server` globally so that it may be run from the co
 ## Usage:
 
      watch-http-server [path] [options]
+     (or alternatively, whs or watchhttpserver)
 
 `[path]` defaults to `./public` if the folder exists, and `./` otherwise.
 
