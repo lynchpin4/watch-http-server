@@ -1,8 +1,12 @@
-# http-server: a command-line http server
+# watch-http-server: a command-line http server
 
-`http-server` is a simple, zero-configuration command-line http server.  It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development, and learning.
+`watch-http-server` is a simple, zero-configuration command-line http server.
 
-![](https://github.com/nodeapps/http-server/raw/master/screenshots/public.png)
+It simply injects a very small javascript include right before the </body> tag of your HTML documents, whereby
+a websocket connection is made on the host, triggering a reload of the page. Currently this happens when
+any item in the folder changes but it may soon be made to be specific relevant to the loaded document.
+
+![](https://github.com/nodeapps/watch-http-server/raw/master/screenshots/public.png)
 
 # Installing globally:
 
@@ -12,37 +16,23 @@ Installation via `npm`.  If you don't have `npm` yet:
 
 Once you have `npm`:
 
-     npm install http-server -g
+     npm install watch-http-server -g
 
-This will install `http-server` globally so that it may be run from the command line.
+This will install `watch-http-server` globally so that it may be run from the command line.
 
 ## Usage:
 
-     http-server [path] [options]
+     watch-http-server [path] [options]
 
 `[path]` defaults to `./public` if the folder exists, and `./` otherwise.
 
-# Installing as a node app
-
-     mkdir myapp
-     cd myapp/
-     jitsu install http-server
-
-*If you do not have `jitsu` installed you can install it via `npm install jitsu -g`*
-
 ## Usage
 
-### Starting http-server locally
+### Starting watch-http-server locally
 
-     node bin/http-server
+     node bin/watch-http-server
 
 *Now you can visit http://localhost:8080 to view your server*
-
-### Deploy http-server to nodejitsu
-
-     jitsu deploy
-
-*You will now be prompted for a `subdomain` to deploy your application on*
 
 ## Available Options:
 
@@ -69,6 +59,3 @@ This will install `http-server` globally so that it may be run from the command 
 `-K` or `--key` Path to ssl key file (default: key.pem).
 
 `-h` or `--help` Print this list and exit.
-
-`-c` Set cache time (in seconds) for cache-control max-age header, e.g. -c10 for 10 seconds
-(defaults to '3600'). To disable caching, use -c-1.
