@@ -1,6 +1,6 @@
 {
   "name": "watch-http-server",
-  "version": "0.7.5",
+  "version": "0.7.6",
   "description": "a simple command-line http server with the built-in zero-configuration automatic page reloads.",
   "main": "./lib/http-server",
   "repository": {
