@@ -6,8 +6,6 @@ It simply injects a very small javascript include right before the </body> tag o
 a websocket connection is made on the host, triggering a reload of the page. Currently this happens when
 any item in the folder changes but it may soon be made to be specific relevant to the loaded document.
 
-![](https://github.com/nodeapps/watch-http-server/raw/master/screenshots/public.png)
-
 # Installing globally:
 
 Installation via `npm`.  If you don't have `npm` yet:
@@ -16,7 +14,7 @@ Installation via `npm`.  If you don't have `npm` yet:
 
 Once you have `npm`:
 
-     npm install watch-http-server -g
+     npm install -g watch-http-server
 
 This will install `watch-http-server` globally so that it may be run from the command line.
 
