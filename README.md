@@ -4,7 +4,7 @@
 
 It simply injects a very small javascript include right before the body tag of your HTML documents, whereby
 a websocket connection is made on the host, triggering a reload of the page. Currently this happens when
-any item in the folder changes but it may soon be made to be specific relevant to the loaded document. </body>
+any item in the folder changes but it may soon be made to be specific relevant to the loaded document.
 
 # Installing globally:
 
