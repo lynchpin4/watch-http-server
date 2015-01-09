@@ -2,7 +2,7 @@
 
 `watch-http-server` is a simple, zero-configuration command-line http server.
 
-It simply injects a very small javascript include right before the </body> tag of your HTML documents, whereby
+It simply injects a very small javascript include right before the body tag of your HTML documents, whereby
 a websocket connection is made on the host, triggering a reload of the page. Currently this happens when
 any item in the folder changes but it may soon be made to be specific relevant to the loaded document.
 
