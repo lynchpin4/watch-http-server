@@ -5,6 +5,13 @@ var colors = require('colors'),
     portfinder = require('portfinder'),
     opener = require('opener'),
     argv = require('optimist')
+      .boolean('d')
+      .boolean('i')
+      .boolean('o')
+      .boolean('s')
+      .boolean('S')
+      .boolean('ssl')
+      .boolean('ext')
       .boolean('cors')
       .argv;
 
@@ -78,6 +85,8 @@ function listen(port) {
       key: argv.K || argv.key || 'key.pem'
     };
   }
+
+  // console.log(`Sexstatic options ${JSON.stringify(options, null, 2)}`);
 
   var server = httpServer.createServer(options);
   server.listen(port, host, function() {
