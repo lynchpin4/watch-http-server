@@ -64,7 +64,7 @@
     }
   ],
   "dependencies": {
-    "chokidar": "^0.12.4",
+    "chokidar": "~1.7.0",
     "colors": "1.0.3",
     "sexstatic": "~0.6.x",
     "opener": "~1.4.0",
